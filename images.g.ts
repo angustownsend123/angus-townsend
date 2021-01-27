@@ -1,4 +1,9 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="!_r,n!HzYOS#ER5?Z:nb">Player</variable><variable type="KIND_SpriteKind" id="BgvKJM8k]EAH=$Bm]LTm">Projectile</variable><variable type="KIND_SpriteKind" id="__-2X_K?aR0A%!|T(T,a">Food</variable><variable type="KIND_SpriteKind" id="s:|Lsju{@y8Rwr93*I-c">Enemy</variable><variable id="T,{}i7T]4(+O!~}$pW|X">Race car</variable><variable id="z+j?No@GpknrHnoo=UiP">mySprite</variable><variable id="}hrjn1=6}#G?[-E|`KVi">myEnemy</variable><variable id="`,0KPlFM2`ygvdtExn1s">otherSprite</variable></variables><block type="pxt-on-start" id="X(j;*q1?+Vab_4%GlLdR" x="86" y="31"><statement name="HANDLER"><block type="gamesetbackgroundimage" id="9fsgBV5v`gByf~3Dgj?q"><value name="img"><shadow type="background_image_picker" id="#)tehugN+aq3bk];;`5M"><field name="img">img`
+// Auto-generated code. Do not edit.
+namespace myImages {
+
+    helpers._registerFactory("image", function(name: string) {
+        switch(helpers.stringTrim(name)) {
+            case "image1":return img`
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1ffff
@@ -119,7 +124,8 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffff1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image1"}}</data></shadow></value><next><block type="gamecountdown" id="G^KUNX(1U;$8TkfsPjfZ"><value name="duration"><shadow type="math_number" id="M$lNQQjmNnPm|*)cj#Q0"><field name="NUM">60</field></shadow></value><next><block type="hudSetLife" id="/1B]^$,Q4D]Fhmnq5/6R"><value name="value"><shadow type="math_number" id="SnOMbL9oOT?g$Q=[)L;b"><field name="NUM">1</field></shadow></value><next><block type="variables_set" id="^v|(l;{I-nC?:Q2`Q58T"><field name="VAR" id="T,{}i7T]4(+O!~}$pW|X">Race car</field><value name="VALUE"><shadow type="math_number" id=";AM8D.E#+1#F)io]awEE"><field name="NUM">0</field></shadow><block type="spritescreate" id="cfDuf0gTm+To132@JG*~"><value name="img"><shadow type="screen_image_picker" id="d!GG_gy-Q%$292988~H5"><field name="img">img`
+`;
+            case "image2":return img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -136,7 +142,8 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image2"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="20Z/s-Efg_$uDi,Q!qqV"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetvel" id="A+KNq22m}/l4|7wrFiPO"><value name="sprite"><block type="variables_get" id="k/r.0ip*BHcCE~l@0mpL"><field name="VAR" id="T,{}i7T]4(+O!~}$pW|X">Race car</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="U3}E^YK^VBwpLWJq6l@-"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="N5r,zs-QWjd_4he#8?tM"><field name="speed">0</field></shadow></value><next><block type="spritesetsetflag" id="`J`VEHW)0Bh:[[Bo9$i}"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get" id="nlKX:.hD,HJZ?K?5*]0a"><field name="VAR" id="T,{}i7T]4(+O!~}$pW|X">Race car</field></block></value><value name="on"><shadow type="toggleOnOff" id="EBHwTxf(N{T=C0f(foGo"><field name="on">true</field></shadow></value><next><block type="game_control_sprite" id=".0:Xq8/*_sQ%:Nu[|.P+"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="9F{0!%;CN?Q:|LpTzV:T"><field name="VAR" id="T,{}i7T]4(+O!~}$pW|X">Race car</field></block></value><value name="vx"><shadow type="math_number" id="w4;$sI$~AUCIh64z|$^:"><field name="NUM">30</field></shadow></value><value name="vy"><shadow type="math_number" id="a^l=8}rf](:jN[#$;rUn"><field name="NUM">30</field></shadow></value><next><block type="variables_set" id="rYs4u4DPqb:jFQ~`.F,9"><field name="VAR" id="}hrjn1=6}#G?[-E|`KVi">myEnemy</field><value name="VALUE"><shadow type="math_number" id="qC6V5}F%G/~{2Xj1G{!6"><field name="NUM">0</field></shadow><block type="spritescreate" id="]Sq50W?[piW~%tfuA8g:"><value name="img"><shadow type="screen_image_picker" id="O3zA;{hS-Q[yz!)E+YS2"><field name="img">img`
+`;
+            case "image3":return img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -153,4 +160,17 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
-`</field><data>{"commentRefs":[],"fieldData":{"img":"myImages.image3"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="qE(mFZ~ieX0zW7;Jqpt{"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="spritesetvel" id=";uvWDqSTmp?[I[3rG}fe"><value name="sprite"><block type="variables_get" id="H%lEC-Gdv.7dBg~Y,w:T"><field name="VAR" id="}hrjn1=6}#G?[-E|`KVi">myEnemy</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="rMUUt~_ssqgl}%;;x6em"><field name="speed">400</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="by(qCMZuBd*|=32#2ZF_"><field name="speed">600</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
+`;
+        }
+        return null;
+    })
+
+    helpers._registerFactory("animation", function(name: string) {
+        switch(helpers.stringTrim(name)) {
+
+        }
+        return null;
+    })
+
+}
+// Auto-generated code. Do not edit.
