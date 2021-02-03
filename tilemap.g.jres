@@ -4,6 +4,31 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true
     },
+    "tile1": {
+        "data": "hwQQABAAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZg==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "tile"
+    },
+    "level1": {
+        "id": "level1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDA1MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA2MDYwNjA3MDkwMjAxMDEwMTAxMDEwMTAxMDIwMTAxMDMwMTAxMDgwOTA0MDEwMzAxMDEwMzAxMDEwMTAxMDEwMTA0MDMwODA5MDEwMTAxMDEwMTA0MDEwMTAxMDEwMTAxMDMwMTA4MDkwMTAxMDEwMjAxMDEwMTAxMDQwMTA0MDEwMTAxMDgwOTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAzMDEwODA5MDEwMjAxMDEwMTAxMDEwMjAxMDEwMTAxMDEwNDA4MDkwMTAxMDQwMTAzMDMwMTAxMDEwMTAxMDEwMTAxMDgwOTA0MDEwMTAxMDEwMTAxMDEwMzAxMDMwNDAxMDEwODA5MDEwMTAxMDEwMTAxMDEwMTAxMDEwMjAxMDEwMTA4MDkwMTAyMDEwMTAyMDEwMTAxMDEwMTAxMDEwMTAxMDgwOTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwODA5MDQwMTAxMDEwMTAxMDEwMTAyMDMwMTAxMDQwMTA4MDkwMTAxMDMwMTAxMDEwMzAxMDEwMTAxMDEwMTAxMDgwOTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwODBhMGEwYTBhMGEwYTBhMGEwYTBhMGEwYTBhMGEwYTBhMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.dungeon.floorMixed",
+            "sprites.dungeon.floorLight4",
+            "sprites.dungeon.floorLightMoss",
+            "sprites.dungeon.floorLight5",
+            "sprites.dungeon.greenOuterNorthWest",
+            "sprites.dungeon.greenOuterNorth0",
+            "sprites.dungeon.greenOuterNorthEast",
+            "sprites.dungeon.greenOuterEast0",
+            "sprites.dungeon.greenOuterWest0",
+            "myTiles.tile1"
+        ],
+        "displayName": "level1"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",

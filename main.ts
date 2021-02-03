@@ -1,10 +1,7 @@
 namespace SpriteKind {
     export const Projectile2 = SpriteKind.create()
+    export const Snake = SpriteKind.create()
 }
-let Falling: Sprite = null
-let Sprite2: Sprite = null
-let s4Dir = 0
-let Limit = 0
 sprites.onOverlap(SpriteKind.Projectile2, SpriteKind.Player, function (sprite, otherSprite) {
     Falling = sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -80,8 +77,53 @@ scene.onHitWall(SpriteKind.Projectile, function (sprite, location) {
         Sprite2.destroy()
     }
 })
+let Limit = 0
+let Sprite2: Sprite = null
+let Falling: Sprite = null
+let s4Dir = 1
+info.setLife(3)
+let Basket = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . 2 2 2 2 2 2 2 2 2 . . . 
+    . . . . 2 1 2 1 2 1 2 1 2 . . . 
+    . . . . 2 1 2 1 2 1 2 1 2 . . . 
+    . . . . 2 1 2 1 2 1 2 1 2 . . . 
+    . . . . 2 1 2 1 2 1 2 1 2 . . . 
+    . . . . 2 1 2 1 2 1 2 1 2 . . . 
+    . . . . 2 2 2 2 2 2 2 2 2 . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player)
+Basket.setPosition(80, 100)
+controller.moveSprite(Basket, 160, 0)
+let mySprite4 = sprites.create(img`
+    . . . 8 8 8 8 8 8 1 1 1 1 1 1 . 
+    . . 8 8 8 8 8 8 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 1 8 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 1 1 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 1 1 1 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 1 1 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 1 8 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 
+    . 8 8 8 8 8 8 8 8 1 1 1 1 1 1 1 
+    . . 8 8 8 8 8 8 8 1 1 1 1 1 1 1 
+    . . . 8 8 8 8 8 8 1 1 1 1 1 1 . 
+    `, SpriteKind.Snake)
+mySprite4.setFlag(SpriteFlag.Ghost, true)
+mySprite4.setPosition(-7, 100)
+tiles.setTilemap(tilemap`level1`)
 game.onUpdateInterval(2200, function () {
-    let mySprite4: Sprite = null
     mySprite4.vx = 10 * s4Dir
     s4Dir = s4Dir * -1
 })
@@ -126,5 +168,8 @@ game.onUpdateInterval(2000, function () {
             `, SpriteKind.Projectile2)
     }
     Falling.setPosition(randint(20, 140), 20)
-    Limit = 0
+    Limit = Math.min(10, info.score())
+    Falling.setVelocity(randint(-100, 100), randint(0 - Limit, 5))
+    Falling.ay = 20
+    Falling.setBounceOnWall(true)
 })
